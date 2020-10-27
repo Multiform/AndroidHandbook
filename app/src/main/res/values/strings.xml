@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Android Handbook</string>
+    <string name="main_menu_studio">Android Studio</string>
+    <string name="main_menu_android">Android</string>
+    <string name="main_menu_kotlin">Kotlin</string>
+    <string name="main_menu_storage">БД и Хранилище</string>
+    <string name="main_menu_xml">XML</string>
+    <string name="main_menu_design">Дизайн</string>
+    <string name="main_menu_dictionaries">Библиотеки</string>
+    <string name="main_menu_header">Справочник Android</string>
+    <string name="main_menu_settings">Настройки</string>
+    <string name="main_menu_favorites">Избранное</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_search_title">Поиск в справочнике</string>
+    <string name="roadmap">Roadmap</string>
+</resources>

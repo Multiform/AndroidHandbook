@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_menu_header_height">130dp</dimen>
+    <dimen name="main_menu_image_height">100dp</dimen>
+    <dimen name="main_menu_image_width">100dp</dimen>
+    <dimen name="base_margin">16dp</dimen>
+    <dimen name="main_menu_width">250dp</dimen>
+    <dimen name="main_menu_height">600dp</dimen>
+</resources>

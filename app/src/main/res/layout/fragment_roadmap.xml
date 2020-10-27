@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1400FF67"
+    android:padding="3dp"
+    tools:context=".ui.screens.roadmap.RoadmapFragment">
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/rcRoadmap"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        tools:listitem="@layout/item_roadmap"-->
+    <!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/roadBtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:padding="6dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Часть 1"
+            android:textColor="#2B2B2B"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.ortiz.touchview.TouchImageView
+        android:id="@+id/roadmap1"
+        android:layout_width="match_parent"
+        android:layout_height="531dp"
+        android:src="@drawable/roadmap_1"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/roadBtn1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/roadBtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:padding="6dp"
+        app:layout_constraintTop_toBottomOf="@id/roadmap1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Часть 2"
+            android:textColor="#2B2B2B"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.ortiz.touchview.TouchImageView
+        android:id="@+id/roadmap2"
+        android:layout_width="match_parent"
+        android:layout_height="415dp"
+        android:src="@drawable/roadmap_2"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/roadBtn2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/roadBtn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:padding="6dp"
+        app:layout_constraintTop_toBottomOf="@id/roadmap2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Часть 3"
+            android:textColor="#2B2B2B"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.ortiz.touchview.TouchImageView
+        android:id="@+id/roadmap3"
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:src="@drawable/roadmap_3"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/roadBtn3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

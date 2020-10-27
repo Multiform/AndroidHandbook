@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4FEE8F</color>
+    <color name="colorPrimaryDark">#4CDD8D</color>
+    <color name="colorAccent">#F9F9F9</color>
+    <color name="color_black">#202020</color>
+    <color name="color_icons_gray">#737373</color>
+
+    <color name="color_menu_icons">#4D4D4D</color>
+</resources>

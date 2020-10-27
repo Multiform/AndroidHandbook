@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/pointerListItem"-->
+    <!--        android:layout_width="35dp"-->
+    <!--        android:layout_height="35dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:src="@drawable/ic_pointer"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:ignore="ContentDescription" />-->
+
+    <ImageView
+        android:id="@+id/imgListItem"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="@dimen/base_margin"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/ic_app_components"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/titleListItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_margin"
+        android:layout_marginTop="@dimen/base_margin"
+        android:ellipsize="end"
+        android:textColor="#303030"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/descriptionBtnListItem"
+        app:layout_constraintStart_toEndOf="@id/imgListItem"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/descriptionBtnListItem"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/base_margin"
+        android:layout_marginEnd="5dp"
+        android:gravity="end"
+        android:text="..?"
+        android:textColor="@color/color_icons_gray"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionTextListItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgListItem"
+        tools:text="sdfsdfsdf dsjff sdjfsdjf sjdfjs sdjfsjdf skdjf sdfsdf sdfsdfsdg sdfsdf sdlkfjosd sdhfosdhf sdfosdoifosid;g sdlkjfsd sdhoishdog sdihos hsdohhgs dshfolskd hsdhgohsd"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
