@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.ArticleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/descriptionTextArticle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:autoLink="web"
+                app:layout_constraintBottom_toTopOf="@id/imgCodeArticle"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="dsjfsjd;f sdjfsjdf sdjfsdj kjfojsdo foisdfois dfoish fo soidfhiosdh fodshfoidshfois dofflsdjflksjdf lksdjflksjdf lsjd flsjfklsjflks fsl flsjflks dlksjdlkf slfj ldls lksdjflk jsljfoisjfo;i jsoifjosjfojsdoif osdj fosj oisj dfosj fsiojd fosj ofs ojfos jfos jfosj of so fjosjf oj osjfo soif sio foisj fojsdofso fos fos fsof" />
+
+            <ImageView
+                android:id="@+id/imgCodeArticle"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                app:layout_constraintBottom_toTopOf="@id/descriptionCodeTextArticle"
+                app:layout_constraintTop_toBottomOf="@id/descriptionTextArticle"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_code_example" />
+
+            <TextView
+                android:id="@+id/descriptionCodeTextArticle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:autoLink="web"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgCodeArticle"
+                tools:text="dsjfsjd;f sdjfsjdf sdjfsdj sdjfo sjdifo sodf iosdh foidsh fosd fos fo siof ios fio sfh osh fosih fiosdhfios dhfohs dfoflsdjflksjdf lksdjflksjdf lsjd flsjfklsjflks fsl flsjflks dlksjdlkf slfj ldls lksdjflk jsljfoisjfo;i jsoifjosjfojsdoif osdj fosj oisj dfosj fsiojd fosj ofs ojfos jfos jfosj of so fjosjf oj osjfo soif sio foisj fojsdofso fos fos fsof" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

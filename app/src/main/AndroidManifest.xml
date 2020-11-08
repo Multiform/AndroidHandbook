@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.multiform.androidhandbook">
 
     <application
@@ -8,13 +9,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity android:name=".ui.screens.ArticleActivity" />
         <activity
-            android:name="com.multiform.androidhandbook.MainActivity"
+            android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <action android:name="android.intent.action.SEARCH" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -26,9 +28,9 @@
         </activity>
 
         <provider
-            android:name="com.multiform.androidhandbook.ui.SearchProvider"
-            android:authorities="com.multiform.SearchProvider" />
-
+            android:name=".ui.SearchProvider"
+            android:authorities="com.multiform.SearchProvider"
+            android:exported="false" />
     </application>
 
 </manifest>

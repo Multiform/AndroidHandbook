@@ -45,7 +45,12 @@
         <item
             android:id="@+id/roadmap"
             android:icon="@drawable/ic_roadmap"
-            android:title="@string/roadmap" />
+            android:title="@string/main_menu_roadmap" />
+
+        <item
+            android:id="@+id/interview"
+            android:icon="@drawable/ic_interview"
+            android:title="@string/main_menu_interview" />
 
     </group>
 
@@ -63,6 +68,19 @@
             android:icon="@drawable/ic_settings"
             android:title="@string/main_menu_settings" />
 
+    </group>
+
+    <group
+        android:id="@+id/groupFooter"
+        android:checkableBehavior="none">
+
+        <item android:title="@string/my_digital_signature">
+            <menu>
+                <item android:title=""
+                    android:icon="@drawable/ic_empty"
+                    android:checkable="false" />
+            </menu>
+        </item>
     </group>
 
 </menu>

@@ -8,8 +8,16 @@ import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import com.multiform.androidhandbook.MainActivity
 import com.multiform.androidhandbook.R
+import com.multiform.androidhandbook.models.ListArticleItem
+import com.multiform.androidhandbook.ui.screens.ArticleActivity
 
 lateinit var APP_ACTIVITY: AppCompatActivity
+
+fun openArticle(item: ListArticleItem) {
+    val intent = Intent(APP_ACTIVITY, ArticleActivity::class.java)
+    intent.putExtra(KEY_ITEM_ARTICLE, item)
+    APP_ACTIVITY.startActivity(intent)
+}
 
 fun showToast(message: String) {
     Toast.makeText(APP_ACTIVITY, message, Toast.LENGTH_SHORT).show()
@@ -36,7 +44,7 @@ fun replaceFragment(fragment: Fragment, isAddToBackStack: Boolean = true) {
 }
 
 @Suppress("DEPRECATION")
-fun setSearchColor(searchView: SearchView) {
+fun setColorSearch(searchView: SearchView) {
     val iconSearch = searchView.findViewById<ImageView>(androidx.appcompat.R.id.search_button)
     val iconVoice = searchView.findViewById<ImageView>(androidx.appcompat.R.id.search_voice_btn)
     val iconClose = searchView.findViewById<ImageView>(androidx.appcompat.R.id.search_close_btn)

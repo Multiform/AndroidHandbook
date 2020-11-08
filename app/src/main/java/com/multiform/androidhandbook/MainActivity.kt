@@ -15,7 +15,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.multiform.androidhandbook.ui.SearchProvider
 import com.multiform.androidhandbook.utils.APP_ACTIVITY
-import com.multiform.androidhandbook.utils.setSearchColor
+import com.multiform.androidhandbook.utils.setColorSearch
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         val searchManager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
         val searchView = menu?.findItem(R.id.search)?.actionView as SearchView
         searchView.setSearchableInfo(searchManager.getSearchableInfo(componentName))
-        setSearchColor(searchView)
+        setColorSearch(searchView)
         return true
     }
 }

@@ -6,4 +6,7 @@
     <dimen name="base_margin">16dp</dimen>
     <dimen name="main_menu_width">250dp</dimen>
     <dimen name="main_menu_height">600dp</dimen>
+    <dimen name="textSizeTitleList">20sp</dimen>
+    <dimen name="icPointerSizeList">35dp</dimen>
+    <dimen name="imgSizeMainList">35dp</dimen>
 </resources>

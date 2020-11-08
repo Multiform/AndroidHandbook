@@ -1,13 +1,12 @@
-package com.multiform.androidhandbook
+package com.multiform.androidhandbook.objects
 
+import com.multiform.androidhandbook.R
 import com.multiform.androidhandbook.models.ListArticleItem
 import com.multiform.androidhandbook.models.MainListItem
 
-object Items {
+object AndroidListItems {
 
-    // ANDROID LIST
-
-    val uiList = mutableListOf(
+    private val uiList = mutableListOf(
         ListArticleItem("UI Layout", R.drawable.ic_app_components, true),
         ListArticleItem("LinearLayout", R.drawable.ic_app_components),
         ListArticleItem("ConstraintLayout", R.drawable.ic_app_components),
@@ -61,7 +60,7 @@ object Items {
         ListArticleItem("Screen Readers", R.drawable.ic_app_components)
     )
 
-    val appCompsList = mutableListOf(
+    private val appCompsList = mutableListOf(
         ListArticleItem("Activity", R.drawable.ic_android, true),
         ListArticleItem("Lifecycle", R.drawable.ic_android),
         ListArticleItem("Activity", R.drawable.ic_android),
@@ -78,19 +77,19 @@ object Items {
         ListArticleItem("Broadcast Receiver", R.drawable.ic_receiver, true)
     )
 
-    val appManifesList = mutableListOf(
+    private val appManifesList = mutableListOf(
         ListArticleItem("Data Backup", R.drawable.ic_app_components),
         ListArticleItem("Permissions", R.drawable.ic_app_components),
         ListArticleItem("App Components", R.drawable.ic_app_components)
     )
 
 
-    val notificationsList = mutableListOf(
+    private val notificationsList = mutableListOf(
         ListArticleItem("Notification", R.drawable.ic_app_components, true),
         ListArticleItem("Notifications Channels", R.drawable.ic_app_components)
     )
 
-    val connectivityList = mutableListOf(
+    private val connectivityList = mutableListOf(
         ListArticleItem("Wi-Fi", R.drawable.ic_app_components),
         ListArticleItem("Telecom (SIM)", R.drawable.ic_app_components),
         ListArticleItem("Bluetooth", R.drawable.ic_app_components),
@@ -100,14 +99,14 @@ object Items {
         ListArticleItem("Connectivity Manager", R.drawable.ic_app_components)
     )
 
-    val sensorsList = mutableListOf(
+    private val sensorsList = mutableListOf(
         ListArticleItem("Position", R.drawable.ic_app_components),
         ListArticleItem("Environment", R.drawable.ic_app_components),
         ListArticleItem("Motion", R.drawable.ic_app_components),
         ListArticleItem("Camera", R.drawable.ic_app_components)
     )
 
-    val architectureList = mutableListOf(
+    private val architectureList = mutableListOf(
         ListArticleItem("Code", R.drawable.ic_app_components, true),
         ListArticleItem("Clean Architecture", R.drawable.ic_app_components, true),
         ListArticleItem("Presentation", R.drawable.ic_app_components, true),
@@ -128,13 +127,13 @@ object Items {
         ListArticleItem("Android Lint", R.drawable.ic_app_components)
     )
 
-    val threadHandlingList = mutableListOf(
+    private val threadHandlingList = mutableListOf(
         ListArticleItem("Handlers", R.drawable.ic_app_components),
         ListArticleItem("Coroutines", R.drawable.ic_app_components),
         ListArticleItem("Async Task", R.drawable.ic_app_components)
     )
 
-    val networkHandlingList = mutableListOf(
+    private val networkHandlingList = mutableListOf(
         ListArticleItem("Retrofit", R.drawable.ic_app_components, true),
         ListArticleItem("Data Transfer Format", R.drawable.ic_app_components, true),
         ListArticleItem("REST", R.drawable.ic_app_components),
@@ -146,14 +145,14 @@ object Items {
         ListArticleItem("Moshi", R.drawable.ic_app_components)
     )
 
-    val dependencyInjectionList = mutableListOf(
+    private val dependencyInjectionList = mutableListOf(
         ListArticleItem("Koin", R.drawable.ic_app_components),
         ListArticleItem("Kodein", R.drawable.ic_app_components),
         ListArticleItem("Dagger", R.drawable.ic_app_components),
         ListArticleItem("Hilt", R.drawable.ic_app_components)
     )
 
-    val testsList = mutableListOf(
+    private val testsList = mutableListOf(
         ListArticleItem("Unit Tests", R.drawable.ic_app_components, true),
         ListArticleItem("Integration Tests", R.drawable.ic_app_components, true),
         ListArticleItem("Instrumentation Tests", R.drawable.ic_app_components, true),
@@ -165,7 +164,7 @@ object Items {
         ListArticleItem("JUnit", R.drawable.ic_app_components)
     )
 
-    val jetpackList = mutableListOf(
+    private val jetpackList = mutableListOf(
         ListArticleItem("Support Library", R.drawable.ic_app_components),
         ListArticleItem("Multidex", R.drawable.ic_app_components),
         ListArticleItem("Slices", R.drawable.ic_app_components),
@@ -176,14 +175,14 @@ object Items {
         ListArticleItem("Architecture Components", R.drawable.ic_app_components)
     )
 
-    val buildConfigurationList = mutableListOf(
+    private val buildConfigurationList = mutableListOf(
         ListArticleItem("Gradle", R.drawable.ic_app_components),
         ListArticleItem("Groovy", R.drawable.ic_app_components),
         ListArticleItem("Build Types", R.drawable.ic_app_components),
         ListArticleItem("Build Flavors", R.drawable.ic_app_components)
     )
 
-    val appPublishingList = mutableListOf(
+    private val appPublishingList = mutableListOf(
         ListArticleItem("Google Play Services", R.drawable.ic_app_components, true),
         ListArticleItem("App APK", R.drawable.ic_app_components, true),
         ListArticleItem("App Bundle", R.drawable.ic_app_components, true),

@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.item_main_list.*
 class MainListItem (
     val title: String,
     val res_ic: Int,
-    val list: List<Item> = emptyList()
+    val list: List<ListArticleItem> = emptyList()
 ) : Item() {
 
     override fun getLayout(): Int = R.layout.item_main_list
